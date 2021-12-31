@@ -1,0 +1,309 @@
+@font-face {
+    font-family: 'Astral';
+    src: url('../assets/Staryssa.ttf');
+}
+@font-face {
+    font-family: 'Caviar';
+    src: url('../assets/Caviar.ttf');
+}
+
+/* Navbar Section */
+.nav-menu{
+    font-size:21px;
+    text-decoration: none;
+    color: black;
+    margin-right: 30px;
+    font-weight: 500;
+    font-family: 'Caviar';
+
+}
+.nav-menu:hover{
+    color: grey;
+
+}
+
+.nav-brand{
+    text-decoration: none;
+    font-family: 'Astral';
+    font-size: 40px !important;
+}
+.nav-brand:hover{
+    color:black;
+}
+
+.active{
+    color: black;
+    font-weight: 400;
+}
+
+.btn-auth{
+    font-size: 19px;
+    padding: 5px 17px;
+}
+.container-navbar-center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container-navbar-center .icon-bag,.icon-heart{
+    font-size: 30px;
+    cursor: pointer;
+}
+.container-navbar-center{
+    padding: 0px 5px;
+    overflow:hidden;
+}
+.icon-bag-container:hover,.icon-heart:hover{
+    transform: scale(1.1);
+    
+}
+
+.icon-bag-container{
+    position: relative;
+}
+
+.counter-bag{
+    top:0;
+    right: -4px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffbb33;
+    width:17px;
+    height:17px;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: 700;
+    color: rgb(253, 244, 244);
+}
+
+.container-search{
+    border-radius: 20px;
+    border: 2px solid rgb(56, 55, 55);
+    display: flex;
+    align-items: center;
+    width:400px;
+    padding:0px 10px;
+}
+
+.container-search input{
+    padding:5px;
+    width:87%;
+    border:none;
+    outline:none;
+    font-size: 18px;
+}
+
+
+.search-icon{
+    cursor: pointer;
+}
+/* Banner Section */
+.container-banner{
+    display: flex;
+    height: 88vh;
+    position: relative;
+}
+
+.img-banner {
+    width:100%;
+    background: center center/cover no-repeat;
+    object-fit: contain;
+    filter: brightness(70%);
+    transition: all 2s ease;
+}
+
+.container-hero-text{
+    position: absolute;
+    padding-left: 10vw;
+    padding-top:170px;
+    color:white !important;
+    letter-spacing: 3px;;
+}
+
+.container-hero-text h1{
+    font-size: clamp(3.6rem, 5.1vw, 5.1rem);
+}
+.container-hero-text h2{
+    font-size: clamp(3.6rem, 5.1vw, 5.1rem);
+}
+
+.container-hero-text h5{
+    word-spacing: 6px;
+}
+
+
+.container-hero-text .btn-banner{
+    margin-top: 10px;
+    font-size: 22px;
+    border-radius: 20px;
+    padding: 5px 30px;
+}
+
+.right-arrow,.left-arrow{
+    font-size: 50px;
+    position: absolute;
+    color: white;
+    top:250px;
+    cursor: pointer;
+}
+.right-arrow:hover,.left-arrow:hover{
+    transform: scale(1.1);
+    background-color: white;
+    border-radius: 50%;
+    color: rgb(153, 138, 138);
+}
+
+.left-arrow{
+    left:20px;
+}
+.right-arrow{
+    right:20px;
+}
+/* Product Page */
+.title{
+    /* font-family: 'Caviar'; */
+    font-size: 65px;
+    font-weight: 700;
+}
+
+.container-product{
+    padding:0px 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-product {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    border : 2px solid rgb(224, 214, 214);
+    border-radius: 5px;
+    position: relative;
+}
+.card-product:hover{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;    
+    border : none;
+
+}
+
+.search-container{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 320px !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-color: grey;
+
+}
+.search-container .btn-search{
+    border-radius: 40px;
+    font-weight:500;
+}
+
+.search-container:hover{
+    opacity: 0.9;
+}
+
+.img-product-small{
+    height: 300px !important;
+    object-fit: contain;
+}
+
+.card-detail{
+    display: flex;
+    flex-direction: column;
+}
+.title-card{
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.card-detail .up-detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+}
+
+
+.down-detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 17px;
+
+}
+
+.down-detail .btn-card-cart{
+    font-size: 12px;
+
+}
+
+.text-overflow {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .text-shadow{
+	text-shadow: 1px 1px 2px #444444; 
+  }
+
+/* Fetail Product Page */
+.container-detail-product{
+    min-height: 87vh !important;
+    display: flex;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 30px;
+}
+
+.container-about{
+    min-height: 87vh !important;
+    display: flex;
+    align-items: center;
+}
+.container-contact-us{
+    min-height: 87vh !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container Advantage */
+.container-advantage{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 80px 40px;
+    background-color: #f8f9fa;
+}
+
+.card-advantage{
+    width : 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:10px;
+    padding:10px;
+}
+.ca-icon{
+    color:white;
+    background-color: rgb(41, 37, 37);
+    padding:10px;
+    border-radius: 50%;
+}
+.ca-title{
+    font-size: 25px;
+    font-weight: 700;
+}
