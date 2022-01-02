@@ -39,6 +39,8 @@
 .btn-auth{
     font-size: 19px;
     padding: 5px 17px;
+    border: 3.3px solid rgb(153, 113, 113)!important;
+    border-radius: 10px;
 }
 .container-navbar-center{
     display: flex;
@@ -69,7 +71,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffbb33;
+    background-color: rgb(141, 128, 128);
     width:17px;
     height:17px;
     border-radius: 50%;
@@ -80,7 +82,7 @@
 
 .container-search{
     border-radius: 20px;
-    border: 2px solid rgb(56, 55, 55);
+    border: 3.3px solid rgb(153, 113, 113);
     display: flex;
     align-items: center;
     width:400px;
@@ -150,9 +152,8 @@
 }
 .right-arrow:hover,.left-arrow:hover{
     transform: scale(1.1);
-    background-color: white;
     border-radius: 50%;
-    color: rgb(153, 138, 138);
+    color: rgb(14, 13, 13);
 }
 
 .left-arrow{
@@ -164,8 +165,10 @@
 /* Product Page */
 .title{
     /* font-family: 'Caviar'; */
-    font-size: 65px;
-    font-weight: 700;
+    font-size: 70px;
+    font-weight: 500;
+    font-family: 'Astral';
+
 }
 
 .container-product{
@@ -206,6 +209,8 @@
 .search-container .btn-search{
     border-radius: 40px;
     font-weight:500;
+    background-color: rgb(216, 168, 168);
+    color: blanchedalmond;
 }
 
 .search-container:hover{
@@ -297,6 +302,10 @@
     margin:10px;
     padding:10px;
 }
+.card-advantage:hover{
+    /* transform: scale(1.1) !important; */
+    /* transition: 0.5s ease-out !important; */
+}
 .ca-icon{
     color:white;
     background-color: rgb(41, 37, 37);
@@ -306,4 +315,88 @@
 .ca-title{
     font-size: 25px;
     font-weight: 700;
+}
+
+/* Categories Section */
+.main-container-cat{
+    display: flex;
+    padding: 2vw 0px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container-card-cat{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:60%;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+}
+
+.container-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 40px;
+    flex-wrap: wrap;
+}
+
+.card-cat{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    justify-content: space-between;
+    border: 2px solid rgb(141, 128, 128);
+    background-color: rgb(141, 128, 128);
+    align-items: center;    
+    color: blanchedalmond;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    margin:4vw;
+}
+
+.card-cat:hover{
+    transform: scale(1.05);
+    background-color: rgb(153, 113, 113);
+    border: 2px solid rgb(153, 113, 113);
+
+}
+
+.card-cat-img {
+    display: flex;
+    justify-content: center;
+
+}
+
+.card-cat-img img{
+    position: relative;
+    width:180px;
+    height:180px;
+    object-fit: cover;
+    top:-40px;
+    border-radius: 50%;
+}
+
+.card-cat-text{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:15px;
+    top:-40px;
+
+}
+.card-cat-text p{
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+.btn-explore-cat{
+    background-color: blanchedalmond;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 20px;
 }

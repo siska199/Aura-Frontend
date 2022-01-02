@@ -7,7 +7,7 @@ export default function Card({data}) {
                 <img className="card-img-top img-product-small"  src={data.image} alt="" />
 
                 <div className="search-container">
-                    <button className="btn btn-warning btn-search">See More</button>
+                    <button className="btn btn-search">See More</button>
                 </div>
 
                 <div className="card-detail mt-4">

@@ -14,7 +14,7 @@ export default function NavbarComponent() {
             <Container>
                 <NavLink className="nav-brand" to="/">
                     <Nav.Item onClick={()=> window.scrollTo(0, 0)}  >
-                        Coofast
+                        Aura
                     </Nav.Item>
                 </NavLink>
 

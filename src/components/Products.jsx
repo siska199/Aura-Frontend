@@ -52,7 +52,7 @@ export default function Products({latest,apiProducts}) {
         <div>
             <div className="container mt-5 text-center">
                 <div className="row ">
-                    <h1 className="py-2 title">Our Lat<span style={{color:"#ffbb33"}}>est Products</span></h1>
+                    <h1 className="py-2 title">Our Lat<span style={{color:"rgb(153, 113, 113)"}}>est Products</span></h1>
                 </div>
             </div>
             <div style={{paddingTop:"10px",marginBottom:"30px"}} className="text-center container">
