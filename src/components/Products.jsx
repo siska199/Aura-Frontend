@@ -49,8 +49,8 @@ export default function Products({latest,apiProducts}) {
     }
 
     return (
-        <div>
-            <div className="container mt-5 text-center">
+        <div className="py-5">
+            <div className="container text-center">
                 <div className="row ">
                     <h1 className="py-2 title">Our Lat<span style={{color:"rgb(153, 113, 113)"}}>est Products</span></h1>
                 </div>
@@ -84,7 +84,9 @@ export default function Products({latest,apiProducts}) {
                     <Loading/>
                 )
             }
-
+            <div className="text-center my-3">
+                <button className="btn btn-dark btn-see-all-products">See All Products</button>
+            </div>
         </div>
     )
 }
