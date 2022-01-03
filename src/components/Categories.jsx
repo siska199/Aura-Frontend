@@ -35,7 +35,7 @@ export default function Categories() {
 
                 {
                     categories.map((cat,i)=>(
-                        <div className='card-cat mb-5'>
+                        <div key={i} className='card-cat mb-5'>
                             <div className="card-cat-img">
                                 <img src={cat.img} alt=""/>
                             </div>

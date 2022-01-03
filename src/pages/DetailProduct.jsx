@@ -102,7 +102,7 @@ export default function DetailProduct() {
                 
                 <div className='main-container-comments-product'>
                     <div className="c-title-comment">
-                        <div className="title-comment">Comment Product</div>
+                        <div className="title-section">Comment Product</div>
                     </div>
 
                     

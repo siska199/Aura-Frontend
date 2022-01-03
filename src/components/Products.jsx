@@ -35,8 +35,8 @@ export default function Products({latest,apiProducts}) {
         return(
             <div className="container-product">
                 {
-                    number.map(n=>(
-                        <div className="col-md-3 px-4 mb-4">
+                    number.map((n,i)=>(
+                        <div key={i} className="col-md-3 px-4 mb-4">
                             <Skeleton height={350} />
                             <Skeleton height={30} />
                             <Skeleton height={30} />
