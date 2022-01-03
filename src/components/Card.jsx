@@ -7,7 +7,7 @@ export default function Card({data}) {
                 <img className="card-img-top img-product-small"  src={data.image} alt="" />
 
                 <div className="search-container">
-                    <button className="btn btn-search">See More</button>
+                    <NavLink to={`/products/${data.id}`} className="btn btn-search">See More</NavLink>
                 </div>
 
                 <div className="card-detail mt-4">

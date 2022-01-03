@@ -5,6 +5,7 @@ import NavbarComponent from './components/Navbar';
 import Footer from './components/Footer'
 import DetailProduct from './pages/DetailProduct';
 import CartList from './pages/CartList';
+import Whishlist from './pages/Whishlist'
 
 const App = () => {
   return(
@@ -14,6 +15,7 @@ const App = () => {
         <Route exact path='/' component={LandingPage} />
         <Route path='/products/:id' component={DetailProduct}/>
         <Route path='/chart-list' component={CartList}/>
+        <Route path='/whishlist' component={Whishlist}/>
       </Switch>
       <Footer/>
     </>
