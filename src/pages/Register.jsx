@@ -1,4 +1,4 @@
-export default function Regiter() {
+export default function Register() {
     return (
         <div>
             

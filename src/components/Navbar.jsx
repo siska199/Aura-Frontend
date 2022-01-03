@@ -30,22 +30,22 @@ export default function NavbarComponent() {
                             <BsFillHandbagFill color="black" className="icon-bag"/>
                             <span className='counter-bag'>0</span>
                         </div>
-                        <div  onClick={()=>history.push('/whishlist')} className="container-search">
+                        <div className="container-search">
                             <IoSearch className="search-icon" size="30px"/>
                             <input placeholder='Search product'/>
                         </div>
-                        <BsFillSuitHeartFill color="black" className="icon-heart ms-3"/>
+                        <BsFillSuitHeartFill onClick={()=>history.push('/whishlist')} color="black" className="icon-heart ms-3"/>
                     </div>
                 </Nav>
 
                 <div className=''>
-                    <button className='btn btn-outline-dark me-3 btn-auth'><IoLogIn size="22px" /> Login</button>
-                    <button className='btn btn-outline-dark btn-auth'><IoPersonAdd/> Register</button>
+                    <button onClick={()=>history.push('/login')} className='btn btn-outline-dark me-3 btn-auth'><IoLogIn size="22px" /> Login</button>
+                    <button onClick={()=>history.push('/register')} className='btn btn-outline-dark btn-auth'><IoPersonAdd/> Register</button>
                 </div>
                 {
                     login&&
                     <div>
-                        <button>Chart</button>
+                        <button >Chart</button>
                         <button>Logout</button>
                     </div>
                 }

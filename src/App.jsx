@@ -6,7 +6,8 @@ import Footer from './components/Footer'
 import DetailProduct from './pages/DetailProduct';
 import CartList from './pages/CartList';
 import Whishlist from './pages/Whishlist'
-
+import Login from './pages/Login'
+import Register from './pages/Register'
 const App = () => {
   return(
     <>
@@ -16,6 +17,8 @@ const App = () => {
         <Route path='/products/:id' component={DetailProduct}/>
         <Route path='/chart-list' component={CartList}/>
         <Route path='/whishlist' component={Whishlist}/>
+        <Route path='/login' component={Login}/>
+        <Route path='/register' component={Register}/>
       </Switch>
       <Footer/>
     </>

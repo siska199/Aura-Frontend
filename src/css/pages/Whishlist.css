@@ -1,0 +1,60 @@
+.main-container-whishlist{
+    min-height: 100vh;
+    padding:40px;
+    display :flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-whishlist{
+    font-family: 'Caviar';
+    font-size:40px;
+    padding:0;
+    margin:0;
+    position: relative;
+}
+.title-whishlist::after{
+    content:"";
+    position: absolute;
+    width:200px;
+    height: 3px;
+    background-color: rgb(70, 90, 90);
+    bottom:0;
+    left:70px;
+}
+
+.card-whishlist{
+    border:2px solid rgb(189, 172, 147);
+    background-color: rgb(189, 172, 147);
+    width: 50%;
+    margin : 10px;
+    display:flex;
+    align-items: center;
+    padding:10px;
+    border-radius: 10px;
+    color:white;
+}
+.c-img-whishlist{
+    position:relative;
+}
+
+.img-whishlist{
+    width :80px;
+    height:80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.remove-whishlist{
+    position:absolute;
+    top:-5px;
+    left:-5px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.c-text-whishlist{
+    display :flex;
+    flex-direction: column;
+    justify-content: center;
+}
